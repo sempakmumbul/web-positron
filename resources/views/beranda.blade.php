@@ -22,10 +22,14 @@
             </h2>
             <div id="isiDeskripsi" class="accordion-content mx-auto" style="max-width: 700px;">
                 <p class="mt-3">
-                    POSITRON 2025 adalah serangkaian kegiatan orientasi bagi mahasiswa baru Departemen Teknik Elektro dan
-                    Informatika UM.
-                    Bertujuan membentuk karakter, integritas, dan semangat kolaborasi lintas prodi melalui kegiatan edukatif
-                    dan inspiratif.
+                    POSITRON atau Program Orientasi Mahasiswa Baru Teknik Elektro dan Informatika adalah serangkaian
+                    kegiatan Pengenalan Kehidupan Kampus Bagi Mahasiswa Baru di tingkat Departemen khususnya Departemen
+                    Teknik Elektro dan Informatika (DTEI), Program ini sangat penting karena dapat mempermudah proses
+                    adaptasi untuk mahasiswa baru sehingga bisa lebih mudah memahami sistem perkuliahan, kegiatan kampus dan
+                    aturan-aturan yang ada di perguruan tinggi Universitas Negeri Malang serta memberi pengetahuan dan
+                    pengalaman yang lebih spesifik mengenai departemen atau program studi yang mereka ambil dan menyediakan
+                    kesempatan untuk mengasah soft skill dasar yang diperlukan oleh mahasiswa baru.
+
                 </p>
             </div>
         </div>
@@ -54,7 +58,7 @@
 
         .toggle-hover:hover {
             color: #6610f2;
-            text-shadow: 0 0 5px rgba(102, 16, 242, 0.4);
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
         }
 
         .toggle-hover:hover::after {
