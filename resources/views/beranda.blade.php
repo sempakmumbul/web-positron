@@ -290,16 +290,21 @@
     <!-- Modal Detail Acara -->
     <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="eventModalLabel">Detail Acara</h5>
+            <div class="modal-content rounded-4 shadow-lg">
+                <div class="modal-header bg-light rounded-top-4">
+                    <h5 class="modal-title fw-bold" id="eventModalLabel">Detail Acara</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body px-4 py-3">
                     <p><strong>Nama Acara:</strong> <span id="modalEventTitle"></span></p>
                     <p><strong>Tanggal:</strong> <span id="modalEventDate"></span></p>
                     <p><strong>Deskripsi:</strong> <span id="modalEventDesc"></span></p>
-                    <button class="btn btn-outline-primary mt-3" id="addToCalendarBtn">Tambahkan ke Kalender Saya</button>
+
+                    <div class="text-center mt-4">
+                        <button class="btn btn-primary px-4 py-2" id="addToCalendarBtn">
+                            Tambahkan ke Kalender Saya
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -370,6 +375,36 @@
             .calendar-grid {
                 grid-template-columns: repeat(4, 1fr);
             }
+        }
+
+        /* Modal styling */
+        .modal-content {
+            border-radius: 1rem;
+            border: none;
+        }
+
+        .modal-header {
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .modal-title {
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+
+        .modal-body {
+            font-size: 1rem;
+            color: #343a40;
+        }
+
+        .modal-body p {
+            margin-bottom: 0.5rem;
+        }
+
+        #addToCalendarBtn {
+            min-width: 220px;
+            font-weight: 600;
+            border-radius: 999px;
         }
     </style>
 
@@ -542,7 +577,6 @@ END:VCALENDAR`;
             renderCalendar(currentMonth, currentYear);
         });
     </script>
-
 
     {{-- CUNTDOWN --}}
     <script>
